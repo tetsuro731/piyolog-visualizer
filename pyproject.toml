@@ -1,0 +1,43 @@
+[project]
+name = "piyolog-visualizer"
+version = "0.1.0"
+description = "PiyoLog data analysis"
+requires-python = ">=3.12"
+dependencies = [
+    "polars",
+    "matplotlib",
+    "jupyter",
+    "numpy",
+    "ipykernel",
+]
+
+[project.scripts]
+preprocess = "preprocess:main"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = false
+disallow_any_generics = false
+ignore_missing_imports = true

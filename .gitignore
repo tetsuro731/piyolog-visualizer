@@ -1,0 +1,12 @@
+# Raw data files
+raw_data/
+
+# Processed data (contains personal info)
+processed_data/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+uv.lock
+tableau/*
