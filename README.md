@@ -51,8 +51,8 @@ uv run python preprocess.py
 
 | 処理 | 内容 |
 |------|------|
-| 日付の匿名化 | 実際の誕生日を `2023-01-01` 起算にシフト（プライバシー保護） |
-| `days_from_birth` | 誕生日からの経過日数を付与 |
+| 日付の匿名化 | 実際の誕生日を `2023-01-01` 基準にシフト      （プライバシー保護） |
+| `days_from_birth` | 誕生日からの経過日数 |
 | イベント正規化 | `Formula` → `formula` のように snake_case に統一 |
 | ミルク量抽出 | `Formula 100ml` → `milk_amount = 100` |
 | 睡眠時間抽出 | `Wake-up (2h 40m)` → `sleep_minutes = 160` |
