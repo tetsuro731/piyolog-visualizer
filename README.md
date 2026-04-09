@@ -101,10 +101,5 @@ https://public.tableau.com/app/profile/tetsuro.sugiura/viz/piyo/Dashboard1
 ```bash
 # 依存ライブラリのインストール
 uv sync
-
-# 前処理実行
-uv run preprocess
 ```
-
-依存パッケージ: `polars`, `matplotlib`, `numpy`, `jupyter`（`pyproject.toml` 参照）
 - uv + pyproject.tomlでの環境構築を前提
